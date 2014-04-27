@@ -22,7 +22,7 @@ resultant logs for the most relevant details.
 - Make sure your program was compiled in debug mode, as you would with gdb.
 - Run your program with:
 
-    ./madbomber.py <program>
+    ./madbomber.py YOUR_PROGRAM_HERE
     
 - If necessary, trigger the error to happen in your program
 - open madbomber.txt in current directory and to view backtraces of all exceptions
