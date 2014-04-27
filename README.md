@@ -7,6 +7,8 @@ Automatic backtrace-on-throw exception logger for fast debugging program
 problems caused by exceptions happening in the wrong places, including those 
 which cause threads to terminate silently.
 
+It uses and requires gdb.
+
 ## Instructions
 - Make sure your program was compiled with in debug mode.
 - Run program with:
