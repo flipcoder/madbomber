@@ -13,6 +13,11 @@ upon the initial throw, so no exception shall escape your oversight.
 In most situations, this means you should be looking at the bottom of the 
 resultant logs for the most relevant details.
 
+## Requirements
+- a C++ program to debug
+- gdb
+- Python 2.7
+
 ## Instructions
 - Make sure your program was compiled in debug mode, as you would with gdb.
 - Run program with:
