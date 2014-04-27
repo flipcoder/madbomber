@@ -20,9 +20,9 @@ resultant logs for the most relevant details.
 
 ## Instructions
 - Make sure your program was compiled in debug mode, as you would with gdb.
-- Run program with:
+- Run your program with:
 
-    ./madbomber.py program
+    ./madbomber.py <program>
     
 - If necessary, trigger the error to happen in your program
 - open madbomber.txt in current directory and to view backtraces of all exceptions
