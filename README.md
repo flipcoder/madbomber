@@ -16,7 +16,7 @@ resultant logs for the most relevant details.
 ## Requirements
 - a C++ program to debug
 - gdb
-- Python 2.7
+- Python 2.7 (for python version)
 
 ## Instructions
 - Make sure your program was compiled in debug mode, as you would with gdb.
