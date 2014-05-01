@@ -8,3 +8,4 @@ bt
 continue
 end
 run
+quit
