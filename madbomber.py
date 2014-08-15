@@ -11,7 +11,8 @@ proc = subprocess.Popen(["gdb", sys.argv[1]],
     stdout=subprocess.PIPE, stderr=subprocess.STDOUT, stdin=subprocess.PIPE
 )
 
-proc.stdin.write('set pagination off\ncatch throw\nrun\n')
+args = ' ' + ' '.join(sys.argv[2:])
+proc.stdin.write('set pagination off\ncatch throw\nrun%s\n' % args)
 poll = select.poll()
 poll.register(proc.stdout, select.POLLIN)
 t = time.clock()
