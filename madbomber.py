@@ -16,14 +16,16 @@ proc.stdin.write('set pagination off\ncatch throw\nrun%s\n' % args)
 poll = select.poll()
 poll.register(proc.stdout, select.POLLIN)
 t = time.clock()
+stoplines= [
+    "(gdb) No stack.\n",
+    "(gdb) The program is not being run.\n",
+    "Couldn\'t get registers: No such process.\n"
+]
 while True:
     r = poll.poll(0)
     if r:
         line = proc.stdout.readline()
-        if line == "(gdb) No stack.\n":
-            proc.kill()
-            break
-        elif line == "(gdb) The program is not being run.\n":
+        if line in stoplines:
             proc.kill()
             break
         print(line[:-1])
